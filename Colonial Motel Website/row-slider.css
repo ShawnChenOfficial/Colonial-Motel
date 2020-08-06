@@ -1,0 +1,98 @@
+﻿
+[type=radio] {
+    display: none;
+}
+
+#slider {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+    #slider label {
+        margin: auto;
+        width: 50%;
+        height: 90%;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+        transition: transform 0.4s ease;
+    }
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-50%,0,-240px);
+    -moz-transform: translate3d(-50%,0,-240px);
+    -webkit-transform: translate3d(-50%,0,-240px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-25%,0,-120px);
+    -moz-transform: translate3d(-25%,0,-120px);
+    -webkit-transform: translate3d(-25%,0,-120px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(25%,0,-120px);
+    -moz-transform: translate3d(25%,0,-120px);
+    -webkit-transform: translate3d(25%,0,-120px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(50%,0,-240px);
+    -moz-transform: translate3d(50%,0,-240px);
+    -webkit-transform: translate3d(50%,0,-240px);
+}
+
+#slide1 {
+    background-image: url(./source/room/room1_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#slide2 {
+    background-image: url(./source/room/room2_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#slide3 {
+    background-image: url(./source/room/room3_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#slide4 {
+    background-image: url(./source/room/room1_2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#slide5 {
+    background-image: url(./source/room/room2_2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
