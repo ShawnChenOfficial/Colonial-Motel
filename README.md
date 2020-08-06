@@ -1,1 +1,1 @@
-# Colonial-Motel
+# Colonial Motel
